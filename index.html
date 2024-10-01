@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="yourself"></p>
+
+    <button onclick="about()">Click the button to introduce yourself.</button>
+
+
+
+    <script>
+        function  about(){
+            var answer = prompt("Tell me about yourself");
+            var clientAnswer = answer.slice(0, 50);
+            document.getElementById("yourself").innerHTML = clientAnswer;
+
+        }
+
+    </script>
+</body>
+</html>
